@@ -24,7 +24,7 @@ Using **XLOOKUP**, I retrieved tenancy information for each property and derived
 
 I then compared this result with the existing `RegisterStatus` using an **IF formula** to flag records as either `Match` or `Mismatch`.
 
-![01_Record_Level_Occupancy_Reconciliation]("https://github.com/user-attachments/assets/fc8fd300-a2f7-4442-ad47-6da16cd7bda0")
+![01_Record_Level_Occupancy_Reconciliation](https://github.com/user-attachments/assets/fc8fd300-a2f7-4442-ad47-6da16cd7bda0)
 
 
 *Record-level occupancy reconciliation showing matched records and highlighted mismatches.*
@@ -50,7 +50,7 @@ The summary showed:
 * **2 mismatches**
 * mismatches identified in **Ealing** and **Hounslow**
 
-![02_Occupancy_Reconciliation_By_Borough]("https://github.com/user-attachments/assets/65f6318f-259c-4f22-8ab6-ae8f0a31edf2")
+![02_Occupancy_Reconciliation_By_Borough](https://github.com/user-attachments/assets/65f6318f-259c-4f22-8ab6-ae8f0a31edf2)
 
 *Occupancy reconciliation summary by borough.*
 
