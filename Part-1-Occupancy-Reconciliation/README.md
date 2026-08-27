@@ -1,6 +1,4 @@
-# Residential Portfolio Operations
-
-## Part 1: Occupancy Reconciliation
+# Residential Portfolio Operations - Part 1: Occupancy Reconciliation
 
 
 ## Project Overview
