@@ -1,58 +1,45 @@
-# Residential Portfolio Operations 
-# Part 1: Occupancy Reconciliation
+# Residential Portfolio Operations
 
+## Part 1: Occupancy Reconciliation
 
 ## Project Overview
 
-This is the first part of my **Residential Portfolio Operations** project.
+I compared the **Property Register** with **Active Tenancies** to check whether occupancy statuses matched at property level.
 
-I reviewed occupancy data across a **Property Register** and **Active Tenancies** dataset to check whether property occupancy statuses were consistent between the two sources.
-
-The aim was to identify record-level discrepancies that could affect portfolio reporting and operational decisions.
+The aim was to identify discrepancies before using the data for portfolio reporting.
 
 ---
 
 ## Key Skills Demonstrated
 
-### Record-Level Data Reconciliation
+### Occupancy Reconciliation
 
-I used `PropertyID` as the common key to match records between the Property Register and Active Tenancies.
+I used `PropertyID` as the common key and **XLOOKUP** to match tenancy records to properties.
 
-Using **XLOOKUP**, I retrieved tenancy information for each property and derived an occupancy status based on whether an active tenancy was found.
+I then used an **IF formula** to compare `RegisterStatus` with the occupancy status derived from active tenancy data.
 
-I then compared this result with the existing `RegisterStatus` using an **IF formula** to flag records as either `Match` or `Mismatch`.
+![01\_Record\_Level\_Occupancy\_Reconciliation](https://github.com/user-attachments/assets/fc8fd300-a2f7-4442-ad47-6da16cd7bda0)
 
-![01_Record_Level_Occupancy_Reconciliation](https://github.com/user-attachments/assets/fc8fd300-a2f7-4442-ad47-6da16cd7bda0)
+*Record-level reconciliation with mismatches highlighted.*
 
+### Exception Review
 
-*Record-level occupancy reconciliation showing matched records and highlighted mismatches.*
+The cross-check identified:
 
-### Exception Identification
+* **20 properties reviewed**
+* **18 matched**
+* **2 mismatches**
+* **90% match rate**
 
-The cross-check identified **2 occupancy mismatches from 20 properties**:
-
-* one property recorded as **Occupied** in the Property Register but with no matching active tenancy;
-* one property recorded as **Void** despite having an active tenancy.
-
-This resulted in a **90% match rate**.
-
-Conditional formatting was used to make exceptions immediately visible for investigation.
+One property was recorded as **Occupied** without an active tenancy, while another was recorded as **Void** despite having an active tenancy.
 
 ### Pivot Table Summary
 
-I created a Pivot Table to summarise reconciliation results by borough.
+I used a Pivot Table to summarise reconciliation results by borough.
 
-The summary showed:
+![02\_Occupancy\_Reconciliation\_By\_Borough](https://github.com/user-attachments/assets/65f6318f-259c-4f22-8ab6-ae8f0a31edf2)
 
-* **18 matched records**
-* **2 mismatches**
-* mismatches identified in **Ealing** and **Hounslow**
-
-![02_Occupancy_Reconciliation_By_Borough](https://github.com/user-attachments/assets/65f6318f-259c-4f22-8ab6-ae8f0a31edf2)
-
-*Occupancy reconciliation summary by borough.*
-
-A useful finding from this exercise was that portfolio-level totals can appear reasonable while individual property records still contain inconsistencies. This is why record-level reconciliation is important before relying on aggregated reporting.
+*Two mismatches were identified in Ealing and Hounslow.*
 
 ---
 
@@ -64,29 +51,20 @@ A useful finding from this exercise was that portfolio-level totals can appear r
 * COUNTIF
 * Conditional Formatting
 * Pivot Tables
-* Excel Tables and structured references
+* Excel Tables
 
 ---
 
 ## Outcome
 
-The review created a clear occupancy reconciliation process that:
+The review showed why record-level cross-checking is important. Overall totals can appear correct even when individual property records do not match.
 
-* matches property and tenancy records using a common key;
-* derives occupancy status from active tenancy data;
-* identifies mismatches requiring investigation;
-* summarises exceptions at portfolio and borough level.
-
-This provides a more reliable basis for occupancy reporting and portfolio management decisions.
-
----
-Excel File: [Project4_Part1_Occupancy_Reconciliation.xlsx](https://github.com/user-attachments/files/31519782/Project4_Part1_Occupancy_Reconciliation.xlsx)
+[Download the Excel file](https://github.com/user-attachments/files/31519782/Project4_Part1_Occupancy_Reconciliation.xlsx)
 
 ## Next Part
 
-**Part 2 — Rent & Arrears Performance**
+**Part 2: Rent & Arrears Performance**
 
-The next stage will review rent charged, rent received, arrears and collection performance across the same residential portfolio.
 
 
 
