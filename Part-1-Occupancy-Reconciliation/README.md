@@ -14,9 +14,7 @@ The aim was to identify discrepancies before using the data for portfolio report
 
 ### Occupancy Reconciliation
 
-I used `PropertyID` as the common key and **XLOOKUP** to match tenancy records to properties.
-
-I then used an **IF formula** to compare `RegisterStatus` with the occupancy status derived from active tenancy data.
+I matched active tenancy records to the Property Register using PropertyID and derived an independent occupancy status for cross-checking.
 
 ![01\_Record\_Level\_Occupancy\_Reconciliation](https://github.com/user-attachments/assets/fc8fd300-a2f7-4442-ad47-6da16cd7bda0)
 
