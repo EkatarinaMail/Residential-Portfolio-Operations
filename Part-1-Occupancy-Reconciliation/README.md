@@ -20,7 +20,7 @@ I then used an **IF formula** to compare `RegisterStatus` with the occupancy sta
 
 ![01\_Record\_Level\_Occupancy\_Reconciliation](https://github.com/user-attachments/assets/fc8fd300-a2f7-4442-ad47-6da16cd7bda0)
 
-*Record-level reconciliation with mismatches highlighted.*
+*Reconciliation with mismatches highlighted.*
 
 ### Exception Review
 
