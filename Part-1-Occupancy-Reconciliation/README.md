@@ -1,8 +1,5 @@
-#Part-1-Occupancy-Reconciliation
-
 # Residential Portfolio Operations/Part 1: Occupancy Reconciliation
 
-[Project4_Part1_Occupancy_Reconciliation.xlsx](https://github.com/user-attachments/files/31519782/Project4_Part1_Occupancy_Reconciliation.xlsx)
 
 ## Project Overview
 
@@ -82,6 +79,7 @@ The review created a clear occupancy reconciliation process that:
 This provides a more reliable basis for occupancy reporting and portfolio management decisions.
 
 ---
+Excel File: [Project4_Part1_Occupancy_Reconciliation.xlsx](https://github.com/user-attachments/files/31519782/Project4_Part1_Occupancy_Reconciliation.xlsx)
 
 ## Next Part
 
